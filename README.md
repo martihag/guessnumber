@@ -14,4 +14,4 @@ localhost:3000/?number=5
 ```
 
 ### Try it
-[hist-guessnumber.herokuapp.com](https://hist-guessnumber.herokuapp.com)
+[hist-numberguess.herokuapp.com](https://hist-numberguess.herokuapp.com)
