@@ -8,7 +8,7 @@ var express = require('express');
 var session = require('express-session');
 var app = express();
 
-var port = 3000;
+app.set('port', (process.env.PORT || 3000));
 
 app.use(session({
   secret: 'hemmelig kode hemmelig',
@@ -73,6 +73,6 @@ app.get('/', function(req, res) {
   res.send(str);
 });
 
-app.listen(port, function() {
-  console.log("Server listening on port " +port);
+app.listen(app.get('port'), function() {
+  console.log("Server listening on port " +app.get('port'));
 });
